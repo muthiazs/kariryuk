@@ -11,8 +11,9 @@
     {{-- Navbar --}}
     <nav class="bg-white shadow-md">
         <div class="max-w-7xl mx-auto px-4 flex justify-between items-center py-4">
-            <div class="text-2xl font-bold text-blue-600">karir<span class="text-yellow-400">Yuk</span></div>
+            <div class="text-2xl font-bold text-blue-900">karir<span class="text-lime-400">Yuk</span></div>
             <div class="hidden md:flex space-x-6 text-gray-600">
+                <a href="#">Home</a>
                 <a href="#">Categories</a>
                 <a href="#">Find Jobs</a>
                 <a href="#">Post Jobs</a>
@@ -20,8 +21,8 @@
                 <a href="#">About</a>
             </div>
             <div class="flex space-x-2">
-                <a href="#" class="border border-blue-600 text-blue-600 px-4 py-2 rounded">Sign Up</a>
-                <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded">Login</a>
+                <a href="#" class="border border-blue-900 text-lime-400 bg-blue-900 font-bold px-4 py-2 rounded">Sign Up</a>
+                <a href="#" class="border border-blue-900 text-blue-900 font-bold px-4 py-2 rounded">Login</a>
             </div>
         </div>
     </nav>
@@ -37,7 +38,7 @@
                 <select class="border p-2 rounded w-1/4">
                     <option>City or State</option>
                 </select>
-                <button class="bg-blue-600 text-white px-4 rounded">Search</button>
+                <button class="border border-blue-900 text-lime-400 bg-blue-900 font-bold px-4 py-2 rounded">Search</button>
             </div>
 
             <div class="flex flex-wrap gap-2">
@@ -57,15 +58,15 @@
             <h2 class="text-2xl font-bold mb-8">Dapatkan pekerjaan impian mu dengan 3 langkah!</h2>
             <div class="flex flex-col md:flex-row justify-center gap-8">
                 <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-blue-600 text-xl font-bold mb-2">1</h3>
+                    <h3 class="text-blue-900 text-xl font-bold mb-2">1</h3>
                     <p>Membuat akun</p>
                 </div>
                 <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-blue-600 text-xl font-bold mb-2">2</h3>
+                    <h3 class="text-blue-900 text-xl font-bold mb-2">2</h3>
                     <p>Unggah CV mu!</p>
                 </div>
                 <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-blue-600 text-xl font-bold mb-2">3</h3>
+                    <h3 class="text-blue-900 text-xl font-bold mb-2">3</h3>
                     <p>Lamar Pekerjaan!</p>
                 </div>
             </div>
