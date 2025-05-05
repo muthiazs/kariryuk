@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KarirYuk - Home</title>
+    <title>KarirYuk - Beranda</title>
     @vite('resources/css/app.css') {{-- pastikan Tailwind aktif di project-mu --}}
 </head>
 <body class="bg-gray-50 font-sans">
@@ -13,16 +13,16 @@
         <div class="max-w-7xl mx-auto px-4 flex justify-between items-center py-4">
             <div class="text-2xl font-bold text-blue-900">karir<span class="text-lime-400">Yuk</span></div>
             <div class="hidden md:flex space-x-6 text-gray-600">
-                <a href="#">Home</a>
-                <a href="#">Categories</a>
-                <a href="#">Find Jobs</a>
-                <a href="#">Post Jobs</a>
-                <a href="#">Apply</a>
-                <a href="#">About</a>
+                <a href="#">Beranda</a>
+                <a href="#">Kategori</a>
+                <a href="#">Cari Lowongan</a>
+                <a href="#">Pasang Lowongan</a>
+                <a href="#">Lamar</a>
+                <a href="#">Tentang Kami</a>
             </div>
             <div class="flex space-x-2">
-                <a href="#" class="border border-blue-900 text-lime-400 bg-blue-900 font-bold px-4 py-2 rounded">Sign Up</a>
-                <a href="#" class="border border-blue-900 text-blue-900 font-bold px-4 py-2 rounded">Login</a>
+                <a href="#" class="border border-blue-900 text-lime-400 bg-blue-900 font-bold px-4 py-2 rounded">Daftar</a>
+                <a href="#" class="border border-blue-900 text-blue-900 font-bold px-4 py-2 rounded">Masuk</a>
             </div>
         </div>
     </nav>
@@ -34,21 +34,21 @@
             <p class="mb-6 text-gray-700">Hai! Mencari pekerjaan yang sesuai dengan keinginan mu? Mulai di karirYuk!</p>
 
             <div class="flex space-x-2 mb-4">
-                <input type="text" placeholder="Job Title or Keyword" class="border p-2 rounded w-1/2">
+                <input type="text" placeholder="Judul Pekerjaan atau Kata Kunci" class="border p-2 rounded w-1/2">
                 <select class="border p-2 rounded w-1/4">
-                    <option>City or State</option>
+                    <option>Kota atau Provinsi</option>
                 </select>
-                <button class="border border-blue-900 text-lime-400 bg-blue-900 font-bold px-4 py-2 rounded">Search</button>
+                <button class="border border-blue-900 text-lime-400 bg-blue-900 font-bold px-4 py-2 rounded">Cari</button>
             </div>
 
             <div class="flex flex-wrap gap-2">
-                @foreach (['Graphic Designer', 'Front End Developer', 'Data Analyst', 'Accountant', 'Photographer', 'Full Stack Developer', 'Senior Lecturer', 'UX Designer'] as $job)
+                @foreach (['Desainer Grafis', 'Pengembang Front End', 'Analis Data', 'Akuntan', 'Fotografer', 'Pengembang Full Stack', 'Dosen Senior', 'Desainer UX'] as $job)
                     <span class="bg-gray-200 px-3 py-1 rounded text-sm">{{ $job }}</span>
                 @endforeach
             </div>
         </div>
         <div class="flex-1 mt-8 md:mt-0">
-            <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg" alt="Office" class="rounded-lg shadow-lg">
+            <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg" alt="Kantor" class="rounded-lg shadow-lg">
         </div>
     </section>
 
@@ -73,6 +73,7 @@
         </div>
     </section>
 
+
     {{-- Lowongan Kerja --}}
     <section class="py-12 max-w-7xl mx-auto px-4">
         <h2 class="text-2xl font-bold mb-8 text-center">Lowongan Kerja</h2>
@@ -81,21 +82,21 @@
             @foreach (range(1, 6) as $i)
                 <div class="bg-white p-6 rounded-lg shadow-md relative">
                     <div class="flex items-center space-x-4 mb-4">
-                        <img src="https://via.placeholder.com/40" alt="Company Logo" class="rounded-full">
+                        <img src="https://via.placeholder.com/40" alt="Logo Perusahaan" class="rounded-full">
                         <div>
-                            <h3 class="font-bold">Company {{ $i }}</h3>
-                            <p class="text-sm text-gray-500">Maryland, USA</p>
+                            <h3 class="font-bold">Perusahaan {{ $i }}</h3>
+                            <p class="text-sm text-gray-500">Jakarta, Indonesia</p>
                         </div>
                     </div>
-                    <h4 class="text-lg font-semibold mb-2">Job Title {{ $i }}</h4>
+                    <h4 class="text-lg font-semibold mb-2">Posisi Pekerjaan {{ $i }}</h4>
                     <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">Full Time</span>
-                        <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-xs">Technology</span>
+                        <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">Penuh Waktu</span>
+                        <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-xs">Teknologi</span>
                         <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">Remote</span>
                     </div>
                     <div class="flex justify-between">
-                        <button class="bg-blue-600 text-white px-4 py-2 rounded">Apply</button>
-                        <button class="border border-blue-600 text-blue-600 px-4 py-2 rounded">Read More</button>
+                        <button class="bg-blue-600 text-white px-4 py-2 rounded">Lamar</button>
+                        <button class="border border-blue-600 text-blue-600 px-4 py-2 rounded">Baca Selengkapnya</button>
                     </div>
                     <button class="absolute top-4 right-4 text-gray-400 hover:text-gray-600">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
@@ -108,7 +109,7 @@
 
         <div class="text-center mt-12">
             <button class="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700">
-                Find More Jobs
+                Temukan Lebih Banyak Lowongan
             </button>
         </div>
     </section>
@@ -117,8 +118,8 @@
     <footer class="bg-white py-8 border-t">
         <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-4 gap-6 text-gray-600 text-sm">
             <div>
-                <h3 class="font-bold mb-4">Job Hunt</h3>
-                <p>The best platform to rewrite your life story. It all begins here!</p>
+                <h3 class="font-bold mb-4">Mencari Kerja</h3>
+                <p>Platform terbaik untuk menulis ulang kisah hidup Anda. Semua dimulai dari sini!</p>
                 <div class="flex space-x-2 mt-4">
                     <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" class="w-5" alt="FB"></a>
                     <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" class="w-5" alt="Twitter"></a>
@@ -126,36 +127,36 @@
                 </div>
             </div>
             <div>
-                <h4 class="font-bold mb-2">Company</h4>
+                <h4 class="font-bold mb-2">Perusahaan</h4>
                 <ul class="space-y-2">
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Career</a></li>
+                    <li><a href="#">Tentang Kami</a></li>
+                    <li><a href="#">Karir</a></li>
                     <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Dukungan</a></li>
                 </ul>
             </div>
             <div>
-                <h4 class="font-bold mb-2">Information</h4>
+                <h4 class="font-bold mb-2">Informasi</h4>
                 <ul class="space-y-2">
-                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Harga</a></li>
                     <li><a href="#">Blog</a></li>
-                    <li><a href="#">Press Kit</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Kit Media</a></li>
+                    <li><a href="#">Kontak</a></li>
                 </ul>
             </div>
             <div>
                 <h4 class="font-bold mb-2">Legal</h4>
                 <ul class="space-y-2">
-                    <li><a href="#">Terms and Conditions</a></li>
-                    <li><a href="#">License Agreement</a></li>
-                    <li><a href="#">Cookies Policy</a></li>
-                    <li><a href="#">Copyright</a></li>
+                    <li><a href="#">Syarat dan Ketentuan</a></li>
+                    <li><a href="#">Perjanjian Lisensi</a></li>
+                    <li><a href="#">Kebijakan Cookie</a></li>
+                    <li><a href="#">Hak Cipta</a></li>
                 </ul>
             </div>
         </div>
 
         <div class="text-center text-gray-400 text-xs mt-6">
-            © 2025 karirYuk. All rights reserved.
+            © 2025 karirYuk. Seluruh hak cipta dilindungi.
         </div>
     </footer>
 
